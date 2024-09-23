@@ -42,7 +42,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyAD3C2Quh2SO0JkM65m8eLMzEDRnT4cbX4',
-    appId: '1:991655813427:web:57ac490c5470c13ac55e46',
+    appId: '1:991655813427:web:b879dbd4c1549441c55e46',
     messagingSenderId: '991655813427',
     projectId: 'belezzaapp-fe2cc',
     authDomain: 'belezzaapp-fe2cc.firebaseapp.com',
@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyB6q7UbysyBbCbzxd1IYRlDZidJl_cBxuM',
-    appId: '1:991655813427:android:e5596b46f4095815c55e46',
+    appId: '1:991655813427:android:ec372ad44b72f615c55e46',
     messagingSenderId: '991655813427',
     projectId: 'belezzaapp-fe2cc',
     storageBucket: 'belezzaapp-fe2cc.appspot.com',
@@ -59,25 +59,27 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAkphbaAn2wEoNrJp53k6irQcR_I7NSrNU',
-    appId: '1:991655813427:ios:5beb15ff66ea5225c55e46',
+    appId: '1:991655813427:ios:d5064790cb9f20fbc55e46',
     messagingSenderId: '991655813427',
     projectId: 'belezzaapp-fe2cc',
     storageBucket: 'belezzaapp-fe2cc.appspot.com',
-    iosBundleId: 'com.example.belezza',
+    iosClientId: '991655813427-dqrqa7vkp8el0csplgf0mgpd5ma6205q.apps.googleusercontent.com',
+    iosBundleId: 'com.example.cosmeticApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyAkphbaAn2wEoNrJp53k6irQcR_I7NSrNU',
-    appId: '1:991655813427:ios:5beb15ff66ea5225c55e46',
+    appId: '1:991655813427:ios:d5064790cb9f20fbc55e46',
     messagingSenderId: '991655813427',
     projectId: 'belezzaapp-fe2cc',
     storageBucket: 'belezzaapp-fe2cc.appspot.com',
-    iosBundleId: 'com.example.belezza',
+    iosClientId: '991655813427-dqrqa7vkp8el0csplgf0mgpd5ma6205q.apps.googleusercontent.com',
+    iosBundleId: 'com.example.cosmeticApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyAD3C2Quh2SO0JkM65m8eLMzEDRnT4cbX4',
-    appId: '1:991655813427:web:ed0a7cc5019dba4bc55e46',
+    appId: '1:991655813427:web:2bfbb9ad01ba794bc55e46',
     messagingSenderId: '991655813427',
     projectId: 'belezzaapp-fe2cc',
     authDomain: 'belezzaapp-fe2cc.firebaseapp.com',

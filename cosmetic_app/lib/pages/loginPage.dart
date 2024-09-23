@@ -1,5 +1,5 @@
-import 'package:belezza/controllers/auth_controller.dart';
-import 'package:belezza/pages/homepage.dart';
+import 'package:cosmetic_app/controllers/auth_controller.dart';
+import 'package:cosmetic_app/pages/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

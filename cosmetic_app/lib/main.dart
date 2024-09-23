@@ -1,5 +1,4 @@
-import 'package:belezza/pages/homePage.dart';
-import 'package:belezza/pages/loginPage.dart';
+import 'package:cosmetic_app/pages/loginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';

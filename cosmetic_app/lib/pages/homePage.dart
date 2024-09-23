@@ -1,5 +1,5 @@
-import 'package:belezza/controllers/product_controller.dart';
-import 'package:belezza/pages/detailPage.dart';
+import 'package:cosmetic_app/controllers/product_controller.dart';
+import 'package:cosmetic_app/pages/detailPage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

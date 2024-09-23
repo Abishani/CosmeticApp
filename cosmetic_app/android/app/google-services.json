@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "991655813427",
+    "project_id": "belezzaapp-fe2cc",
+    "storage_bucket": "belezzaapp-fe2cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991655813427:android:ec372ad44b72f615c55e46",
+        "android_client_info": {
+          "package_name": "com.example.cosmetic_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991655813427-goglg82jednkq90skg8b57v5e958dc51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6q7UbysyBbCbzxd1IYRlDZidJl_cBxuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991655813427-goglg82jednkq90skg8b57v5e958dc51.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "991655813427-r1fapd2lrnm5vo9sgiqdf91dihmkurtk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.belezza"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
