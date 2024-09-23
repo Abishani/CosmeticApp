@@ -9,13 +9,13 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<String> images = (product['images'] as List<dynamic>?)
+    List<String> images = (product.images as List<dynamic>?)
             ?.map((item) => item as String)
             .toList() ??
         ['https://via.placeholder.com/600'];
 
     return Scaffold(
-      appBar: AppBar(title: Text(product['title'])),
+      appBar: AppBar(title: Text(product.title)),
       body: Container(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -23,7 +23,7 @@ class DetailPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                product['title'],
+                product.title,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black),
               ),
               SizedBox(height: 20),
@@ -46,7 +46,7 @@ class DetailPage extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Text(
-                product['description'],
+                product.description,
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),
               ),
               SizedBox(height: 20),
@@ -57,7 +57,7 @@ class DetailPage extends StatelessWidget {
                     style: TextStyle(fontSize: 16, color: Colors.black),
                   ),
                   RatingBar.builder(
-                    initialRating: product['rating']?.toDouble() ?? 0.0,
+                    initialRating: product.rating?.toDouble() ?? 0.0,
                     minRating: 1,
                     direction: Axis.horizontal,
                     allowHalfRating: true,
@@ -74,7 +74,7 @@ class DetailPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               Text(
-                "Price: \$${product['price']}",
+                "Price: \$${product.price}",
                 style: TextStyle(fontSize: 16, color: Colors.black),
               ),
             ],

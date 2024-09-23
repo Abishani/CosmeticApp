@@ -19,16 +19,16 @@ class LoginPage extends StatelessWidget {
               onPressed: () => authController.googleSignIn(),
               child: Text("Sign in with Google"),
             ),
-            Obx(() {
-              if (authController.user.value != null) {
-                return ElevatedButton(
-                  onPressed: () => Get.to(HomePage()),
-                  child: Text("Continue to Home"),
-                );
-              } else {
-                return Container();
-              }
-            }),
+            // Obx(() {
+            //   if (authController.user.value != null) {
+            //     return ElevatedButton(
+            //       onPressed: () => Get.to(HomePage()),
+            //       child: Text("Continue to Home"),
+            //     );
+            //   } else {
+            //     return Container();
+            //   }
+            // }),
           ],
         ),
       ),

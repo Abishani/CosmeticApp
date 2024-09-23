@@ -1,3 +1,4 @@
+import 'package:cosmetic_app/controllers/auth_controller.dart';
 import 'package:cosmetic_app/controllers/product_controller.dart';
 import 'package:cosmetic_app/pages/detailPage.dart';
 import 'package:flutter/material.dart';
@@ -5,25 +6,36 @@ import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   final ProductController productController = Get.put(ProductController());
+  final AuthController authController = Get.find<AuthController>();
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        appBar: AppBar(title: Text("Products")),
+        appBar: AppBar(
+        title: const Text('Product List'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () {
+              authController.signOut();
+            },
+          ),
+        ],
+      ),
         body: Obx(() {
           if (productController.isLoading.value) {
             return Center(child: CircularProgressIndicator());
           }
           return ListView.builder(
             padding: EdgeInsets.all(8.0),
-            itemCount: productController.products.length,
+            itemCount: productController.productList.length,
             itemBuilder: (context, index) {
-              var product = productController.products[index];
-              String title = product['title'] ?? 'No Title';
-              String brand = product['brand'] ?? 'Unknown Brand';
-              String thumbnail = product['thumbnail'] ?? 'https://via.placeholder.com/150';
-              double price = product['price']?.toDouble() ?? 0.0;
+              var product = productController.productList[index];
+              String title = product.title;
+              String brand = product.brand;
+              String thumbnail = product.thumbnail;
+              double price = product.price.toDouble();
       
               return Card(
                 margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
