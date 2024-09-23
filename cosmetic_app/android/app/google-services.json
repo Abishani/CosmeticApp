@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "991655813427-28bhbl5298he6u044t153262unk228kc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cosmetic_app",
+            "certificate_hash": "2830366f873338ce271a2bc98c16a3874691ba36"
+          }
+        },
+        {
           "client_id": "991655813427-goglg82jednkq90skg8b57v5e958dc51.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -31,10 +39,10 @@
               "client_type": 3
             },
             {
-              "client_id": "991655813427-r1fapd2lrnm5vo9sgiqdf91dihmkurtk.apps.googleusercontent.com",
+              "client_id": "991655813427-dqrqa7vkp8el0csplgf0mgpd5ma6205q.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.belezza"
+                "bundle_id": "com.example.cosmeticApp"
               }
             }
           ]
