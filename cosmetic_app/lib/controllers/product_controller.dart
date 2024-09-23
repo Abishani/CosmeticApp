@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
+import '../models/product.dart';
+import '../services/product_service.dart';
 
 class ProductController extends GetxController {
-  var products = [].obs;
   var isLoading = true.obs;
+  var productList = <Product>[].obs;
 
   @override
   void onInit() {
@@ -15,14 +15,8 @@ class ProductController extends GetxController {
   void fetchProducts() async {
     try {
       isLoading(true);
-      var response =
-          await http.get(Uri.parse('https://dummyjson.com/products'));
-      if (response.statusCode == 200) {
-        var jsonResponse = json.decode(response.body);
-        products.value = jsonResponse['products'];
-      }
-    } catch (e) {
-      Get.snackbar("Error", "Failed to load products.");
+      var products = await ProductService().fetchProducts();
+      productList.value = products;
     } finally {
       isLoading(false);
     }
